@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*
+
+Author: Gideon Asay
+Date:9/30/2026
+
+
+*/
+
+.column {
+    float: left;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  
+  .middle {
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+    background-color: rgb(179, 209, 234);
+}
+
+div nav img {
+    img {
+        width: 100px;
+        height: auto; /* Keeps the aspect ratio intact */
+      }
+}
+
+header nav a {
+	img {
+        width: 50px;
+        height: auto; /* Keeps the aspect ratio intact */
+      }
+}
+
+div .middle nav a {
+	img {
+        width: 400px;
+        height: auto; /* Keeps the aspect ratio intact */
+      }
+}
+
+nav a {
+	img {
+        width: 200px;
+        height: auto; /* Keeps the aspect ratio intact */
+      }
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    color: rgb(76, 65, 65);
+    text-decoration: none; /* Removes the default blue underline */
+}
